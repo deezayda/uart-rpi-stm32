@@ -12,7 +12,7 @@ uart = serial.Serial(
 )
 
 while True: 
-    data_to_send = "Hello"
+    data_to_send = "Hello, STM32 Microcontroller"
     uart.write(data_to_send.encode())  # Send data as bytes
     print("Data sent to STM32: ", data_to_send)
     time.sleep(2)
