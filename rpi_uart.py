@@ -21,8 +21,8 @@ while True:
         # Check for ready signal from STM32
         if received_data == 1: 
             # Send data to the STM32
-            data_to_send = "Hello"
+            data_to_send = "[GRN, 10001, 3]"
             encoded_data = data_to_send.encode('utf-8') # Encode as bytes
             uart.write(encoded_data)  # Send data as bytes using utf-8 
             print("Data sent to STM32: ", data_to_send)
-            time.sleep(1)
+            time.sleep(2)
