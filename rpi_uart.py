@@ -11,12 +11,6 @@ uart = serial.Serial(
     timeout=1              # Timeout for reading data
 )
 
-# while True: 
-#     data_to_send = "Hello, STM32 Microcontroller"
-#     uart.write(data_to_send.encode())  # Send data as bytes
-#     print("Data sent to STM32: ", data_to_send)
-#     time.sleep(2)
-
 # Poll Rx and if signal then send data to STM32
 while True: 
     received = uart.read() # Default Size 1 byte
